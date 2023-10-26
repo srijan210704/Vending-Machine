@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vending Machine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Vending Machine!</h1>
+        <div class="products">
+            <div class="product">
+                <img src="soda1.png" alt="Soda">
+                <p class="product-name">Soda</p>
+                <p class="product-price">₹20</p>
+                <button class="purchase-button">Purchase</button>
+            </div>
+            <div class="product">
+                <img src="chips.png" alt="Chips">
+                <p class="product-name">Chips</p>
+                <p class="product-price">₹15</p>
+                <button class="purchase-button">Purchase</button>
+            </div>
+            <div class="product">
+                <img src="candy.png" alt="Candy">
+                <p class="product-name">Candy</p>
+                <p class="product-price">₹10</p>
+                <button class="purchase-button">Purchase</button>
+            </div>
+            <div class="product">
+                <img src="cookies.png" alt="Cookies">
+                <p class="product-name">Cookies</p>
+                <p class="product-price">₹25</p>
+                <button class="purchase-button">Purchase</button>
+            </div>
+            <div class="product">
+                <img src="cake.png" alt="Cake">
+                <p class="product-name">Cake</p>
+                <p class="product-price">₹30</p>
+                <button class="purchase-button">Purchase</button>
+            </div>
+            <div class="product">
+                <img src="juice.png" alt="Juice">
+                <p class="product-name">Juice</p>
+                <p class="product-price">₹25</p>
+                <button class="purchase-button">Purchase</button>
+            </div>
+        </div>
+        <div class="balance">
+            <p>Your Balance:</p>
+            <p id="balance-amount">₹0.00</p>
+            <input type="number" id="coin-input" placeholder="Enter Amount">
+            <button id="add-money-button">Add Money</button>
+        </div>
+    </div>
+    <!-- Loading window -->
+    <div id="loading-window">
+        <div class="loading-icon"></div>
+        <p>Dispensing...</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
